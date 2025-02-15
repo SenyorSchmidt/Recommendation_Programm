@@ -4,8 +4,10 @@ from data.movie_data import movies
 
 def searchByGenre():
     genre = input("Which genre do you want to look for? ")
+    result = ""
     for movie in movies:
         if genre in movies[movie][0]:
+            result += movie
             print("Title:")
             print(movie)
             print("\n" + "Actors:")
@@ -13,6 +15,7 @@ def searchByGenre():
                 print(actor)
             print("\n" + "Description:")
             print(movies[movie][2] + "\n")
-    print("Sorry I couldnt find anything. Lets try again")
-    searchByGenre()
 
+    if result == "":
+        print("Sorry I couldn't find anything for this genre. Let's try again!")
+        searchByGenre()
