@@ -1,4 +1,7 @@
+from components.start import start
+
 def main():
-    print("Hello")
+    print("Hello User!")
+    start()
 
 main()
