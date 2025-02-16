@@ -1,7 +1,7 @@
 from components.search import search
 
 def start():
-    userChoice = input("Do you want a movie reecommendation for tonight? y/n ")
+    userChoice = input("Do you want a movie recommendation for tonight? y/n ")
     if userChoice == "n":
         print("Ok. If you change your mind, you know where to find me!")
     elif userChoice == "y":
