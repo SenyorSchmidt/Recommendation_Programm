@@ -1,5 +1,7 @@
 from components.search import search
 
+# TODO: implement a choice to terminate the programm
+
 def start():
     userChoice = input("Do you want a movie recommendation for tonight? y/n ")
     if userChoice == "n":

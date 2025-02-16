@@ -35,3 +35,7 @@ The start.py file consists of:
 
 The start function asks the User if a recommendation is wished.
 If chosen "y" the start function calls the search function with "genre" or "actor" as a variable, according to the users choice.
+
+If chosen "n" the programm terminates.
+
+Any other choice will result in the recursive calling of the start function, because it can only handle "actor" or "genre" as an input. 
