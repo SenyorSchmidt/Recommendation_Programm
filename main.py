@@ -4,4 +4,5 @@ def main():
     print("Hello User!")
     start()
 
-main()
+if __name__ == "__main__":
+    main()
