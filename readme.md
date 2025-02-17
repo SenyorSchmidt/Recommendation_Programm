@@ -1,3 +1,5 @@
+** IN PROGRESS **
+
 This is the ReadMe file for my Recommendation Programm.
 
 It's a "Portfolio Project" from the Codecademy Computer Science Course. This Project marks the end of the coding part, before the course continues with databases.
@@ -38,4 +40,5 @@ If chosen "y" the start function calls the search function with "genre" or "acto
 
 If chosen "n" the programm terminates.
 
-Any other choice will result in the recursive calling of the start function, because it can only handle "actor" or "genre" as an input. 
+Any other choice will result in the recursive calling of the start function, because it can only handle "actor" or "genre" as an input.
+
