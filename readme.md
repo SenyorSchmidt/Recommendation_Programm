@@ -21,15 +21,15 @@ The main function welcomes the user by printing "Hello User!" and calls the star
 
 The __name__ variable includes and calls the previously mentioned main function.
 
-2.1 components:
+2.1. components:
 
 The components folder consists of the different components used for the Recommendation Programm.
 
-2.1.1 __init__.py:
+2.1.1. __init__.py:
 
 This empty .py-file is used to turn the components folder into a package to make it easier to import individual functions from the needed files.
 
-2.1.2 start.py:
+2.1.2. start.py:
 
 The start.py file consists of:
     - an import of the search function and
