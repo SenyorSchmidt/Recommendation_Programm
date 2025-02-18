@@ -42,3 +42,9 @@ If chosen "n" the programm terminates.
 
 Any other choice will result in the recursive calling of the start function, because it can only handle "actor" or "genre" as an input.
 
+2.1.3 search.py:
+
+The search.py file consists of:
+    - an import of the movies dict containing the data about the movies
+    - declaration and implementation of the printResults, tryAgain and search functions
+

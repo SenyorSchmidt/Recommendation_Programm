@@ -1,6 +1,7 @@
 # dict of movies that follows basic structure:
 # name of movie : [genres],[actors],[short description of story]
 
+
 movies = {
     "Saving Private Ryan": 
         [

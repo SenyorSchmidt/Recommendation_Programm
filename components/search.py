@@ -1,6 +1,5 @@
 # search function that takes "genre" or "actor" as input and searches through movies dict depending an the user choice
 
-
 from data.movie_data import movies
 
 # function to print out the movie, that fits the search item

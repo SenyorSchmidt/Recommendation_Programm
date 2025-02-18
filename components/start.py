@@ -10,5 +10,5 @@ def start():
         genreOrActor = input("Do you want to search by genre or actor? ")
         search(genreOrActor)
     else:
-        print("Sorry, I can only take y, n or c as an answer. Please try again")
+        print("Sorry, I can only take y or n as an answer. Please try again")
         start()
