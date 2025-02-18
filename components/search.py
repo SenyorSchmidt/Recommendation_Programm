@@ -13,6 +13,11 @@ def printResults(movie):
     print("\n" + "Description:")
     print(movies[movie][2] + "\n")
 
+def tryAgain():
+    tryAgain = input("Sorry I couldn't find anything. Do you want to try again? y/n ")
+    if tryAgain == "y":
+        search(input("Do you want to search by genre or actor? "))
+
 # search function that takes genre or actor as input
 def search(genreOrActor):
     result = False
@@ -24,8 +29,7 @@ def search(genreOrActor):
                 printResults(movie)
         # if nothing is found result stays False
         if result == False:
-            print("Sorry I couldn't find anything. Let's try again!")
-            search(input("Do you want to search by genre or actor? "))
+            tryAgain()
 
     elif genreOrActor == "actor":
         actor = input("Which actor do you want to look for? ")
@@ -35,8 +39,8 @@ def search(genreOrActor):
                 printResults(movie)
         # if nothing is found result stays False
         if result == False:
-            print("Sorry I couldn't find anything. Let's try again!")
-            search(input("Do you want to search by genre or actor? "))
+            tryAgain()
+
     # if user writes anything else than "actor" or "genre"
     else:
         print("Sorry I can only look for actors or genres. Let's try this again, shall we?")
