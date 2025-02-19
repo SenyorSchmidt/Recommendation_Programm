@@ -24,39 +24,29 @@ def tryAgain():
         print("Sorry I can only take y or no as an answer")
         tryAgain()
 
+def movieSearch(movies, genreOrActor, int, result):
+    if genreOrActor == "exit":
+        print("Ok. If you change your mind, you know where to find me!")
+
+    else:
+        for movie in movies:
+            if genreOrActor in movies[movie][int]:
+                result = True
+                printResults(movie)
+        if result == False:
+            tryAgain()
+
 
 # search function that takes genre or actor as input
 def search(genreOrActor):
     result = False
     if genreOrActor == "genre":
         genre = input("Which genre do you want to look for? You can also quit the programm by typing 'exit'. ")
-        if genre == "exit":
-            print("Ok. If you change your mind, you know where to find me!")
-        else:
-            for movie in movies:
-                if genre == "exit":
-                    print("Ok. If you change your mind, you know where to find me!")
-                elif genre in movies[movie][0]:
-                    result = True
-                    printResults(movie)
-            # if nothing is found result stays False
-            if result == False:
-                tryAgain()
+        movieSearch(movies, genre, 0, result)
 
     elif genreOrActor == "actor":
-        actor = input("Which actor do you want to look for?  You can also quit the programm by typing 'exit'.")
-        for movie in movies:
-            if actor == "exit":
-                print("Ok. If you change your mind, you know where to find me!")
-            elif actor in movies[movie][1]:
-                result = True
-                printResults(movie)
-        # if nothing is found result stays False
-        if result == False:
-            tryAgain()
-
-    elif genreOrActor == "exit":
-        print("Ok. If you change your mind, you know where to find me!")
+        actor = input("Which actor do you want to look for?  You can also quit the programm by typing 'exit'. ")
+        movieSearch(movies, actor, 1, result)
 
     # if user writes anything else than "actor" or "genre"
     else:
