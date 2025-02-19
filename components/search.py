@@ -2,8 +2,6 @@
 
 from data.movie_data import movies
 
-# TODO: implement a choice to terminate the programm
-
 # function to print out the movie, that fits the search item
 def printResults(movie):
     print("Title:")
