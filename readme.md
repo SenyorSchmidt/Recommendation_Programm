@@ -1,5 +1,3 @@
-** IN PROGRESS **
-
 This is the ReadMe file for my Recommendation Programm.
 
 It's a "Portfolio Project" from the Codecademy Computer Science Course. This Project marks the end of the coding part, before the course continues with databases.
@@ -57,4 +55,4 @@ Otherwise it calls the function TryAgain.
 The printResults function takes the movie as an input and prints the Title, Actors and a short description of the movie. It is called by the movieSearch function.
 
 The tryAgain function takes the input of the user if they want to try again. If yes, it calls the search function with the input that is provided by the user. If not, then the programm terminates with a print statement.
-If its neither "y" nor "n" the function prints a statement and calls itself again
+If its neither "y" nor "n" the function prints a statement and calls itself again.
